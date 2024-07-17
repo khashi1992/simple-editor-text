@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="css/master.css">
+   
+   
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <title>TextEditor</title>
+</head>
+<body>
+  <main class="w-full overflow-x-hidden bg-[rgb(31,31,31)] px-[20px]">
+        <section class="w-full h-[100vh] flex justify-center items-center  relative">
+                <div class="w-[600px] h-[360px]  shadow-box  flex flex-wrap gap-3 px-5  rounded-2xl">
+                        <div class="relative mt-3 w-full h-12  flex justify-center items-center gap-3 *:rounded-[4px] *:border *:border-cyan-50 *:shadow-box2">
+                            <button class="h-[40px] w-[50px] " id="leftAligen"><img src="asset/img/icons8-align-64 (2).png" alt="" class="object-contain w-full h-full"></button>
+                            <button class="h-[40px] w-[50px] " id="centerAligen"><img src="asset/img/icons8-align-64.png" alt="" class="object-cover w-full h-full"></button>
+                            <button class="h-[40px] w-[50px] " id="rigthAligen"><img src="asset/img/icons8-align-64 (1).png"  class="object-contain w-full h-full" alt=""></button>
+                            <button class="h-[40px] w-[50px] " id="italic"><img src="asset/img/icons8-italic-24.png"  class="object-contain w-full h-full" alt=""></button>
+                            <button class="h-[40px] w-[50px] " id="bold"><img src="asset/img/icons8-bold-64.png"  class="object-contain w-full h-full" alt=""></button>
+                            <button class="h-[40px] w-[50px] " id="plus"><img src="asset/img/icons8-plus-60.png"  class="object-contain w-full h-full" alt=""></button>
+                            <button class="h-[40px] w-[50px] " id="mines"><img src="asset/img/icons8-dash-50.png"  class="object-contain w-full h-full" alt=""></button>
+                            <button class="h-[40px] w-[50px] relative" id="pickColor">
+                               
+                                <input type="color" id="color" class="absolute left-[50%] top-[50%]  " colorpick-eyedropper-active="true" hidden >
+                                <img src="asset/img/icons8-palette-88 (1).png"  class="object-contain w-full h-full" alt="">
+                            </button>
+                            <button class="h-[40px] w-[50px] " id="changeBack">  <img src="asset/img/icons8-sun-100.png" id="img" class="object-contain w-full h-full" alt=""></button>
+                        </div>
+                        <div class="w-full border rounded-2xl h-[230px] overflow-hidden relative" id="bottomEditor">
+                            <textarea contenteditable="true" class="w-full h-full bg-[rgb(31,31,31)] text-white p-2 " name="text" id="text" required></textarea>
+                            <p class="absolute top-2  left-2 text-white"> start writing...</p>
+                        </div>
+                </div>
+        </section>
+        <footer class="w-full justify-center items-center  ">
+            <h3 class="text-[20px] capitalize text-center font-bold text-white">devlope by khashayar madad</h3>
+        </footer>
+  </main>
+  <script src="script/script.js"></script>
+</body>
+</html>
